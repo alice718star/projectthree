@@ -50,9 +50,10 @@
                     <td>'.$o['clothes'].'</td>
                     <td>'.$o['transport'].'</td>
                     <td>'.$o['travel'].'</td>
-                    <td>'.$o['total'].'</td>
+                    <td>'.array_sum($total).'</td>
 				</tr>';
         }
+        
         ?>
 
     </table>

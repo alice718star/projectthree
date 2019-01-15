@@ -27,10 +27,9 @@ $a = array(
 "travel" => $tr
 );
 
-            //function sum($rm, $f, $u, $e, $c, $t, $tr){
-                //$total = $rm + $f + $u + //$e + $c + $t + $tr;
-                //return $total;
-        
+$total = array($rm, $f, $u, $e, $c, $t, $tr);
+
+echo array_sum($total);
 
 
 //print_r($g+$y);
