@@ -12,6 +12,9 @@ $c = $_POST['clothes'];
 $t = $_POST['transport'];
 $tr = $_POST['travel'];
 
+$total = array($rm, $f, $u, $e, $c, $t, $tr);
+$total = array_sum($total);
+
 //echo $g.$y.$ag;
 //create an associative array which will be injected into our json
 $a = array(
@@ -24,16 +27,9 @@ $a = array(
 "entertainment" => $e,
 "clothes" => $c,    
 "transport" => $t,
-"travel" => $tr
+"travel" => $tr,
+"total" => $total
 );
-
-$total = array($rm, $f, $u, $e, $c, $t, $tr);
-
-echo array_sum($total);
-
-
-//print_r($g+$y);
-//$s = array
 
 //get the data from the json file
 $d = file_get_contents('data.json');
@@ -52,6 +48,31 @@ $d = json_encode($d);
 //save the edited data back into the json file
 file_put_contents('data.json', $d);
 
+switch ($y){
+    case "2016":$ds = 's16.json';
+    break;
+    case "2017":$ds = 's17.json';
+    break;
+    case "2018":$ds = 's18.json';
+    break;
+}
+
+$gd = file_get_contents($ds);
+
+$gd = json_decode($gd, true);
+
+$gd["r"]+=$rm;
+$gd["f"]+=$f;
+$gd["u"]+=$u;
+$gd["e"]+=$e;
+$gd["c"]+=$c;
+$gd["t1"]+=$t;
+$gd["t2"]+=$tr;
+
+$gd = json_encode($gd);
+
+file_put_contents($ds, $gd);
+
 //since this page doen't contain any html, redirect the user to a new page
-//header('location:../profile.php');
+header('location:../profile.php');
 ?>
