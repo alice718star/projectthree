@@ -49,11 +49,17 @@ $d = json_encode($d);
 file_put_contents('data.json', $d);
 
 switch ($y){
-    case "2016":$ds = 's16.json';
+    case "2016":
+        $ds = 's16.json';
+        $p = 'profile16.php';
     break;
-    case "2017":$ds = 's17.json';
+    case "2017":
+        $ds = 's17.json';
+        $p = 'profile17.php';
     break;
-    case "2018":$ds = 's18.json';
+    case "2018":
+        $ds = 's18.json';
+        $p = 'profile18.php';
     break;
 }
 
@@ -74,5 +80,5 @@ $gd = json_encode($gd);
 file_put_contents($ds, $gd);
 
 //since this page doen't contain any html, redirect the user to a new page
-header('location:../profile.php');
+header('location:../'.$p);
 ?>
