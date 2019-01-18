@@ -67,13 +67,13 @@ $gd = file_get_contents($ds);
 
 $gd = json_decode($gd, true);
 
-$gd["r"]+=$rm;
-$gd["f"]+=$f;
-$gd["u"]+=$u;
-$gd["e"]+=$e;
-$gd["c"]+=$c;
-$gd["t1"]+=$t;
-$gd["t2"]+=$tr;
+$gd["Rent/Mortgage"]+=$rm;
+$gd["Food"]+=$f;
+$gd["Utilities"]+=$u;
+$gd["Entertainment"]+=$e;
+$gd["Clothes"]+=$c;
+$gd["Transportation"]+=$t;
+$gd["Travel"]+=$tr;
 
 $gd = json_encode($gd);
 
