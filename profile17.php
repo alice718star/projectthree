@@ -174,7 +174,7 @@
 							<tr id="d${i}" class="datarow">
                         
 								<td>${i}</td>
-								<td>${d[i]}</td>
+								<td>$${d[i]}</td>
 								<td><p class="pcnt">%</p></td>
 								
 							</tr>

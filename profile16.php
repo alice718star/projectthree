@@ -169,12 +169,12 @@
 						values.push(d[i]);
 						xaxisplots.push(i);
 						totalsum += Number(d[i]);
-						// Step 9: build the rest of the table generating a row that contains labels (rent etc). these inputs have values containing the  labels, values of a radio button. Lastly create a delete button that has a value set to the index of the key of the object to delete.
+						// Step 9: build the rest of the table generating a row that contains labels (rent etc). these inputs have values containing the  labels, values of a radio button. This part was removed:Lastly create a delete button that has a value set to the index of the key of the object to delete.
 						$(".datatable").append(`
 							<tr id="d${i}" class="datarow">
                         
 								<td>${i}</td>
-								<td>${d[i]}</td>
+								<td>$${d[i]}</td>
 								<td><p class="pcnt">%</p></td>
 								
 							</tr>
