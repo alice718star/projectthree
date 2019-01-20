@@ -179,13 +179,14 @@
                         $(".datatable").append(`
 							<tr id="d${i}" class="datarow">
 								<td>${i}</td>
-								<td>$<span class="digits">${d[i]}</span></td>
+								<td>$<span class="digitstwo">${d[i]}</span></td>
 								<td><p class="pcnt">%</p></td>
 							</tr>
 						`);
                     };
 
-                    $.fn.digits = function() {
+
+                    $.fn.digitstwo = function() {
                         return this.each(function() {
                             if ($(this).text().indexOf(".") != -1) {
                                 var parts = $(this).text().split(".");
@@ -197,7 +198,9 @@
                             }
                         })
                     }
-                    $(".digits").digits();
+                    $(".digitstwo").digitstwo();
+
+
                     for (i in values) {
                         arcdata.push((values[i] / totalsum) * 360);
                         $('.pcnt:eq(' + i + ')').prepend(Math.round((values[i] / totalsum) * 100));
