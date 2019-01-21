@@ -1,14 +1,13 @@
-nav {
-    background-color: #003366;
-    color: #FFFFFF;
-}
-
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 label {
     padding: 5px;
+}
+
+form {
+    font-size: 20px;
 }
 
 input {
@@ -25,13 +24,31 @@ footer li {
 }
 
 table {
-    border: 1px #000 solid;
+    border: 1px #000 dotted;
     padding: 5px;
     margin: 0 auto;
     width: 90%;
 }
 
+table th {
+    background-color: #CCCC99;
+    text-align: center;
+    border: 1px #FFFFFF;
+    padding: 5px;
+}
+
 table td {
     border: 1px #ddd solid;
     padding: 10px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tablecontainer {
+    width: 500px;
+    padding-bottom: 50px;
 }

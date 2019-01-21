@@ -3,39 +3,26 @@
 <head>
     <title>Survey Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!--Custom styles here-->
+    <!--Custom styles here-->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <style>
         /*custom page css here*/
-
-        #linegraph {
-            background: #eee;
-        }
-
-        #tablecontainer {
-            padding-left: 20px
+        nav {
+            padding: 10px;
         }
 
         .ckey {
             width: 70px;
             height: 30px;
         }
-
-        #graph,
-        #tablecontainer {
-            display: inline-block;
-        }
-
-        #tablecontainer {
-            width: 300px;
-        }
-
-        .row {
+        
+        h1{
             text-align: center;
+            padding-top: 30px;
         }
 
     </style>
@@ -49,7 +36,7 @@
     <div class="row">
         <div id="graph" class="col m-auto text-center">
             <!-- this canvas will contain the line graph. -->
-            <canvas id="piegraph" width="400" height="450"></canvas>
+            <canvas id="piegraph" width="325" height="375"></canvas>
         </div>
         <div id="tablecontainer" class="col">
             <!-- This form will contain a table full of inputs -->
@@ -107,6 +94,7 @@
 
     </table>
     <hr>
+   
     <?php require_once('assets/partials/footer.php'); ?>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -169,9 +157,8 @@
 						<tr>
 							<th>Key</th>
 							<th>Category</th>
-							<th>Amount</th>
-							<th>% of Total</th>
-							
+							<th>Total Amount of all entries</th>
+							<th>% of all categories</th>
 						</tr>
 					`);
                     // Step 7: loop through data which are multi-dimensional objects containing x axis labels and values
@@ -313,7 +300,7 @@
     </script>
 
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
