@@ -2,7 +2,13 @@
 
 <head>
     <title>Survey Data</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--Custom styles here-->
+    <link rel="stylesheet" href="css/style.css">
+    
     <style>
         /*custom page css here*/
 
@@ -15,7 +21,7 @@
         }
 
         .ckey {
-            width: 100%;
+            width: 70px;
             height: 30px;
         }
 
@@ -37,7 +43,7 @@
 
 <body>
     <?php require_once('assets/partials/nav.php'); ?>
-    <h1>Survey Data</h1>
+    <h1>2018 Survey Data</h1>
     <hr>
 
     <div class="row">
@@ -162,8 +168,8 @@
                     $(".datatable").append(`
 						<tr>
 							<th>Key</th>
-							<th>X Axis</th>
-							<th>Value</th>
+							<th>Category</th>
+							<th>Amount</th>
 							<th>% of Total</th>
 							
 						</tr>
@@ -306,7 +312,8 @@
 
     </script>
 
-
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 
