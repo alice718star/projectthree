@@ -9,24 +9,33 @@
     <!--Custom styles here-->
     <link rel="stylesheet" href="/css/style.css">
 
-    <style>
-        nav {
+<style>
+    nav {
         padding: 10px;
     }
-        h1{
-            font-weight: bolder;
-        }
-        h1, h2{
-            text-align: center;
-        }
-        h2{
-            padding: 20px 120px 20px 120px;
-        }
-    </style>
 
-    <style>
+    h1 {
+        font-weight: bolder;
+    }
 
-    </style>
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    h2 {
+        padding: 20px 120px 20px 120px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer li {
+        list-style-type: none;
+    }
+</style>
 
 </head>
 
@@ -117,10 +126,7 @@
             </div>
         </div>
     </div>
-    <hr>
 
-
-    <hr>
     <?php require_once('assets/partials/footer.php'); ?>
 
     <script src="js/jquery.min.js"></script>

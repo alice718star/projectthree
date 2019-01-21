@@ -31,8 +31,6 @@ $a = array(
 "total" => $total
 );
 
-
-
 //get the data from the json file
 $d = file_get_contents('data.json');
 
