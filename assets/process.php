@@ -74,13 +74,14 @@ $gd["Entertainment"]+=$e;
 $gd["Clothes"]+=$c;
 $gd["Transportation"]+=$t;
 $gd["Travel"]+=$tr;
+++$gd["Total"];
 
 $gd = json_encode($gd);
 
 file_put_contents($ds, $gd);
 
-//echo count($ds);
+
 
 //since this page doen't contain any html, redirect the user to a new page
-//header('location:../'.$p);
+header('location:../'.$p);
 ?>
