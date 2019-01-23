@@ -11,6 +11,7 @@
 
     <style>
         /*custom page css here*/
+
         nav {
             padding: 10px;
         }
@@ -300,10 +301,8 @@
             e.preventDefault();
         });
         //look at graph.php to continue...
-
+        
     </script>
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -9,33 +9,54 @@
     <!--Custom styles here-->
     <link rel="stylesheet" href="/css/style.css">
 
-<style>
-    nav {
-        padding: 10px;
-    }
+    <style>
+        nav {
+            padding: 10px;
+        }
 
-    h1 {
-        font-weight: bolder;
-    }
+        h1 {
+            font-weight: bolder;
+        }
 
-    h1,
-    h2 {
-        text-align: center;
-    }
+        h1,
+        h2 {
+            text-align: center;
+        }
+        
+        h2{
+            line-height: 1.5em;
+        }
 
-    h2 {
-        padding: 20px 120px 20px 120px;
-    }
+        h2 {
+            padding: 20px 120px 20px 120px;
+        }
 
-    footer {
-        display: flex;
-        justify-content: center;
-    }
+        p {
+            font-size: 18px;
+        }
 
-    footer li {
-        list-style-type: none;
-    }
-</style>
+        label {
+            padding: 5px;
+        }
+
+        form {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer li {
+            list-style-type: none;
+        }
+
+    </style>
 
 </head>
 
@@ -57,48 +78,48 @@
                     <p>Complete your demographic information below.</p>
                     <b>Gender:</b>
                     <label>
-                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Male" required>Male
                     </label>
                     <label>
-                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Female" required>Female
                     </label>
                     <label>
-                        <input type="radio" name="gender" value="Self-Identify">Self-Identify
+                        <input type="radio" name="gender" value="Self-Identify" required>Self-Identify
                     </label>
                     <br>
                     <b>Spending Year:</b>
                     <label>
-                        <input type="radio" name="year" value="2016">2016
+                        <input type="radio" name="year" value="2016" required>2016
                     </label>
                     <label>
-                        <input type="radio" name="year" value="2017">2017
+                        <input type="radio" name="year" value="2017" required>2017
                     </label>
                     <label>
-                        <input type="radio" name="year" value="2018">2018
+                        <input type="radio" name="year" value="2018" required>2018
                     </label>
                     <br>
                     <b>Age Range:</b>
                     <label>
-                        <input type="radio" name="age" value="18-24">18-24
+                        <input type="radio" name="age" value="18-24" required>18-24
                     </label>
                     <label>
-                        <input type="radio" name="age" value="25-34">25-34
+                        <input type="radio" name="age" value="25-34" required>25-34
                     </label>
                     <label>
-                        <input type="radio" name="age" value="35-44">35-44
+                        <input type="radio" name="age" value="35-44" required>35-44
                     </label>
                     <label>
-                        <input type="radio" name="age" value="45-54">45-54
+                        <input type="radio" name="age" value="45-54" required>45-54
                     </label>
                     <br>
                     <label>
-                        <input type="radio" name="age" value="55-64">55-64
+                        <input type="radio" name="age" value="55-64" required>55-64
                     </label>
                     <label>
-                        <input type="radio" name="age" value="65-74">65-74
+                        <input type="radio" name="age" value="65-74" required>65-74
                     </label>
                     <label>
-                        <input type="radio" name="age" value="75 or older">75 or older
+                        <input type="radio" name="age" value="75 or older" required>75 or older
                     </label>
                     <br>
                     <br>
