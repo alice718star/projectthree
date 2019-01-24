@@ -74,7 +74,7 @@ $gd["Entertainment"]+=$e;
 $gd["Clothes"]+=$c;
 $gd["Transportation"]+=$t;
 $gd["Travel"]+=$tr;
-++$gd["Total"];
+++$gd["Entries"];
 
 $gd = json_encode($gd);
 

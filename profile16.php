@@ -88,19 +88,19 @@
                     <td>$<span class="digits">'.$o['total'].'</span></td>
 				</tr>';
             }
-			
         }
         
         ?>
 
     </table>
+    
+   
 
     <hr>
     <?php require_once('assets/partials/footer.php'); ?>
-
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 
     <script>
         $.fn.digits = function() {
@@ -165,7 +165,7 @@
 							<th>Category</th>
 							<th>Total Amount of all entries</th>
 							<th>% of all categories</th>
-							
+							<th>Average</th>
 						</tr>
 					`);
                     // Step 7: loop through data which are multi-dimensional objects containing x axis labels and values
@@ -180,7 +180,8 @@
 							<tr id="d${i}" class="datarow">
 								<td>${i}</td>
 								<td>$<span class = "digitstwo">${d[i]}</span></td>
-								<td><p class="pcnt">%</p></td>	
+								<td><p class="pcnt">%</p></td>
+                                <th>${d[i]/d["Entries"]}</td>
 							</tr>
 						`);
                     };
@@ -306,6 +307,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  
+
 
 </body>
 

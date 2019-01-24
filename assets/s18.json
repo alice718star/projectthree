@@ -1,10 +1,11 @@
 {
-    "Rent\/Mortgage": 0,
+    "Rent/Mortgage": 0,
     "Food": 0,
     "Utilities": 0,
     "Entertainment": 0,
     "Clothes": 0,
     "Transportation": 0,
-    "Travel": 0
+    "Travel": 0,
+    "Entries": 0
 }
 
