@@ -13,6 +13,10 @@
         nav {
             padding: 10px;
         }
+        
+        .navbar {
+            background-color: #CCCCCC;
+        }
 
         h1 {
             font-weight: bolder;
@@ -60,7 +64,7 @@
     <div class="container">
         <h1>The Spending Survey</h1>
         <h3>Knowing how you're spending year to year can fall to the wayside. Get a clear picture of your yearly expenses and how they stack up to other spenders' expenses.</h3>
-        <h3>Our evolving collection of data (thanks to your anonymous input!) allows us create a financial pie chart based on all input and to provide an average amount for each expense category.</h3>
+        <h3>Our evolving collection of data (thanks to your anonymous input!) allows us to create a financial pie chart based on all input and to provide an average amount for each expense category.</h3>
         <hr>
         <br>
         <br>

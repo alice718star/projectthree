@@ -14,6 +14,10 @@
         nav {
             padding: 10px;
         }
+        
+        .navbar {
+            background-color: #CCCCCC;
+        }
 
         .ckey {
             width: 70px;
@@ -24,7 +28,7 @@
             text-align: center;
             padding-top: 30px;
         }
-       
+
     </style>
 </head>
 
@@ -108,6 +112,7 @@
             })
         }
         $(".digits").digits();
+
     </script>
 
     <script>
@@ -172,7 +177,7 @@
 								<td><p class="pcnt">%</p></td>
                                 <td>$<span class = "digitstwo">${d[i]/d["Entries"]}</span></td>
 							</tr>
-						`);
+						`); 
                     };
 
                     $.fn.digitstwo = function() {
@@ -193,6 +198,9 @@
                         arcdata.push((values[i] / totalsum) * 360);
                         $('.pcnt:eq(' + i + ')').prepend(Math.round((values[i] / totalsum) * 100));
                     };
+
+                    
+
 
                     //used twice per data element to get the start and end angle
                     function degreesToRadians(degrees) {
@@ -297,4 +305,5 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

@@ -13,6 +13,10 @@
         nav {
             padding: 10px;
         }
+        
+        .navbar {
+            background-color: #CCCCCC;
+        }
 
         .ckey {
             width: 70px;
