@@ -55,9 +55,7 @@
         footer li {
             list-style-type: none;
         }
-
     </style>
-
 </head>
 
 <body>

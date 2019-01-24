@@ -40,8 +40,6 @@ $d = json_decode($d, true);
 //add the assoc array $a to our data, here we add it to the beginning of the array using unshift, but we can also use push to add to the end
 array_unshift($d, $a);
 
-//print_r($d);
-
 //after editing the data, convert it back to a js object
 $d = json_encode($d);
 
@@ -79,8 +77,6 @@ $gd["Travel"]+=$tr;
 $gd = json_encode($gd);
 
 file_put_contents($ds, $gd);
-
-
 
 //since this page doen't contain any html, redirect the user to a new page
 header('location:../'.$p);

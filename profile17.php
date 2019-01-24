@@ -8,7 +8,6 @@
 
     <!--Custom styles here-->
     <link rel="stylesheet" href="css/style.css">
-
     <style>
         /*custom page css here*/
         nav {
@@ -24,7 +23,6 @@
             text-align: center;
             padding-top: 30px;
         }
-
     </style>
 </head>
 
@@ -32,7 +30,6 @@
     <?php require_once('assets/partials/nav.php'); ?>
     <h1>2017 Survey Data</h1>
     <hr>
-
     <div class="row">
         <div id="graph" class="col m-auto text-center">
             <!-- this canvas will contain the line graph. -->
@@ -87,9 +84,7 @@
                     <td>$<span class="digits">'.$o['total'].'</span></td>
 				</tr>';
             }
-			
-        }
-        
+        }     
         ?>
 
     </table>
@@ -111,7 +106,6 @@
             })
         }
         $(".digits").digits();
-
     </script>
 
     <script>
@@ -157,7 +151,8 @@
 							<th>Key</th>
 							<th>Category</th>
 							<th>Total Amount of all entries</th>
-							<th>% of all categories</th>
+							<th>%</th>
+							<th>Average Amount</th>
 						</tr>
 					`);
                     // Step 7: loop through data which are multi-dimensional objects containing x axis labels and values
@@ -173,6 +168,7 @@
 								<td>${i}</td>
 								<td>$<span class = "digitstwo">${d[i]}</span></td>
 								<td><p class="pcnt">%</p></td>
+                                <td>$<span class = "digitstwo">${d[i]/d["Entries"]}</span></td>
 							</tr>
 						`);
                     };
@@ -195,7 +191,6 @@
                         arcdata.push((values[i] / totalsum) * 360);
                         $('.pcnt:eq(' + i + ')').prepend(Math.round((values[i] / totalsum) * 100));
                     };
-
 
                     //used twice per data element to get the start and end angle
                     function degreesToRadians(degrees) {
@@ -293,7 +288,6 @@
             e.preventDefault();
         });
         //look at graph.php to continue...
-
     </script>
 
     <script src="js/jquery.min.js"></script>

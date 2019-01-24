@@ -11,7 +11,6 @@
 
     <style>
         /*custom page css here*/
-
         nav {
             padding: 10px;
         }
@@ -25,7 +24,7 @@
             text-align: center;
             padding-top: 30px;
         }
-
+       
     </style>
 </head>
 
@@ -33,7 +32,6 @@
     <?php require_once('assets/partials/nav.php'); ?>
     <h1>2016 Survey Data</h1>
     <hr>
-
     <div class="row">
         <div id="graph" class="col m-auto text-center">
             <!-- this canvas will contain the line graph. -->
@@ -89,17 +87,11 @@
 				</tr>';
             }
         }
-        
         ?>
-
     </table>
-    
-   
-
     <hr>
     <?php require_once('assets/partials/footer.php'); ?>
-    
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script>
@@ -116,10 +108,7 @@
             })
         }
         $(".digits").digits();
-
     </script>
-
-
 
     <script>
         // Step 1: This function contains an ajax call to get the data in a json file
@@ -164,8 +153,8 @@
 							<th>Key</th>
 							<th>Category</th>
 							<th>Total Amount of all entries</th>
-							<th>% of all categories</th>
-							<th>Average</th>
+							<th>%</th>
+							<th>Average Amount</th>
 						</tr>
 					`);
                     // Step 7: loop through data which are multi-dimensional objects containing x axis labels and values
@@ -181,7 +170,7 @@
 								<td>${i}</td>
 								<td>$<span class = "digitstwo">${d[i]}</span></td>
 								<td><p class="pcnt">%</p></td>
-                                <th>${d[i]/d["Entries"]}</td>
+                                <td>$<span class = "digitstwo">${d[i]/d["Entries"]}</span></td>
 							</tr>
 						`);
                     };
@@ -204,7 +193,6 @@
                         arcdata.push((values[i] / totalsum) * 360);
                         $('.pcnt:eq(' + i + ')').prepend(Math.round((values[i] / totalsum) * 100));
                     };
-
 
                     //used twice per data element to get the start and end angle
                     function degreesToRadians(degrees) {
@@ -302,14 +290,11 @@
             e.preventDefault();
         });
         //look at graph.php to continue...
-        
+
     </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  
-
 
 </body>
-
 </html>

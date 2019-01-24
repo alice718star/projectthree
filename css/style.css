@@ -2,6 +2,10 @@ p {
     font-size: 18px;
 }
 
+.navbar {
+    background-color: #CCCCCC;
+}
+
 table {
     border: 1px #000 dotted;
     padding: 5px;
@@ -12,7 +16,6 @@ table {
 table th {
     background-color: #CCCC99;
     text-align: center;
-    border: 1px #FFFFFF;
     padding: 5px;
 }
 
@@ -20,6 +23,7 @@ table td {
     border: 1px #ddd solid;
     padding: 10px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .row {
@@ -40,4 +44,3 @@ footer {
 footer li {
     list-style-type: none;
 }
-
