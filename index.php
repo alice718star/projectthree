@@ -19,15 +19,12 @@
         }
 
         h1,
-        h2 {
+        h2, h3 {
             text-align: center;
         }
         
-        h2{
+        h2, h3{
             line-height: 1.5em;
-        }
-
-        h2 {
             padding: 20px 120px 20px 120px;
         }
 
@@ -62,7 +59,8 @@
     <?php require_once('assets/partials/nav.php'); ?>
     <div class="container">
         <h1>The Spending Survey</h1>
-        <h2>Knowing how you're spending year to year can fall to the wayside. Get a clear picture of your yearly expenses and how they stack up to other spenders' expenses.</h2>
+        <h3>Knowing how you're spending year to year can fall to the wayside. Get a clear picture of your yearly expenses and how they stack up to other spenders' expenses.</h3>
+        <h3>Our evolving collection of data (thanks to your anonymous input!) allows us create a financial pie chart based on all input and to provide an average amount for each expense category.</h3>
         <hr>
         <br>
         <br>
